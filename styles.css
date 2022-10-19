@@ -18,7 +18,7 @@ body {
 #main {
     background-color: #A16AEB;
     margin: auto;
-    height: 475px;
+    height: auto;
 
 }
 #content {
@@ -30,18 +30,18 @@ body {
     background-color: #7E53B8;
     float: left;
     width: 25%;
-    height: 400px;
+    height: auto;
 }
-#contentA {
+#column01 {
     background-color:#4A306B;
     margin:auto;
     float:left;
     width: 37.5%;
-    height: 400px;
+    height: auto;
 }
-#contentB {
+#column02 {
     background-color: #7E53B8;
     float: left;
     width: 37.5%;
-    height: 400px;
+    height: auto;
 }
