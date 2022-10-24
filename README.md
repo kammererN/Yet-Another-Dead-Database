@@ -1,4 +1,3 @@
-# YouTubeGallery
-YouTube gallery is a project which seeks to create an online gallery of some YouTube videos
-that I consider to be masterpieces. 
-link: albany.edu/~nk677984/INF201/YouTubeGallery
+# YADD: Yet Another (Grateful) Dead Database
+YADD is a project which seeks to make archived Grateful Dead information more accessible for individuals who are fans of the band. 
+hosted at: albany.edu/~nk677984/INF201/YADD
