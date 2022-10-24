@@ -1,0 +1,77 @@
+/*
+
+    Universal styles for YouTube Gallery website project.
+    Author: Nicholas Kammerer | nkammerer@albany.edu
+
+ */
+
+/* Variable definitions to make stylesheet changes cumbersome */
+:root {
+    --tile-color: white;
+    --opacity: 80%;
+    --hd-font: "Montserrat";
+    --mn-font: "Courier New";
+}
+
+body {
+    text-align: center;
+    background-image: url("assets/background.png");
+    margin: auto;
+}
+#container{
+    text-align: center;
+}
+
+#header {
+    font-family: var(--hd-font);
+    background-color: var(--tile-color);
+    opacity: var(--opacity);
+    width: 70%;
+    text-align: center;
+    display: inline-block;
+
+}
+#main {
+    display: block;
+    font-family: var(--mn-font);
+    background-color: var(--tile-color);
+    opacity: var(--opacity);
+    margin: auto;
+    height: 470px;
+    width: 70%;
+
+}
+#content {
+    width: 85%;
+    margin: auto;
+
+}
+#sidebar {
+    background-color: var(--tile-color);
+    float: left;
+    width: 25%;
+    height: auto;
+    align-text: center;
+}
+#column01 {
+    background-color:var(--tile-color);
+    margin:auto;
+    float:left;
+    width: 37.5%;
+    height: auto;
+    opacity: var(--opacity);
+}
+#column02 {
+    background-color: var(--tile-color);
+    float: left;
+    width: 37.5%;
+    height: auto;
+}
+#footer {
+    background-color: var(--tile-color);
+    opacity: var(--opacity);
+    width: 10%;
+    text-align: center;
+    display: inline-block;
+    margin: 1%;
+}
