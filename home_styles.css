@@ -12,17 +12,17 @@
     --hd-font: "Montserrat";
     --mn-font: "Courier New";
 }
-
+/* Universal styling for page */
 body {
+    padding:0;
+    margin:0;
+    height:100%;
     text-align: center;
-    background-image: url("assets/background.png");
+    background-image: url("images/");
     margin: auto;
 }
-#container{
-    text-align: center;
-}
-
-#header {
+/* Header of page */
+header {
     font-family: var(--hd-font);
     background-color: var(--tile-color);
     opacity: var(--opacity);
@@ -31,28 +31,24 @@ body {
     display: inline-block;
 
 }
-#main {
+/* Main page content */
+main {
     display: block;
     font-family: var(--mn-font);
     background-color: var(--tile-color);
     opacity: var(--opacity);
     margin: auto;
-    height: 470px;
-    width: 70%;
-
+    height: fit-content;
+    width: 90%;
 }
-#content {
-    width: 85%;
+/* Footer of page */
+footer {
+    font-family: var(--hd-font);
     margin: auto;
-
+    width: 100%;
+    bottom: 0
 }
-#sidebar {
-    background-color: var(--tile-color);
-    float: left;
-    width: 25%;
-    height: auto;
-    align-text: center;
-}
+/* Left column of page */
 #column01 {
     background-color:var(--tile-color);
     margin:auto;
@@ -61,17 +57,10 @@ body {
     height: auto;
     opacity: var(--opacity);
 }
+/* Right column of page */
 #column02 {
     background-color: var(--tile-color);
     float: left;
     width: 37.5%;
     height: auto;
-}
-#footer {
-    background-color: var(--tile-color);
-    opacity: var(--opacity);
-    width: 10%;
-    text-align: center;
-    display: inline-block;
-    margin: 1%;
 }
