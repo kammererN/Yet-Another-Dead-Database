@@ -16,27 +16,28 @@
     <header>
         <img src="../images/stealie.jpg" alt="Stealie logo">
         <h1>YADD: Yet Another Dead Database</h1>
-        <div id="navBar">
+        <nav>
             <ul>
                 <li><a href="../index.html" title="About page">About</a></li>
+                <li><a href="../pages/history.html" title="History of the Band">History</a></li>
                 <li><a href="../pages/albums.html" title="Albums">Studio Albums</a></li>
                 <li><a href="../pages/art.html" title="Fan Art">Fan Art</a></li>
-                <li><a href="../pages/history.html" title="History of the Band">History of the Band</a></li>
+                <li><a href="#email" title="Intrapage link">Contact</a></li>
             </ul>
-        </div>
+        </nav>
     </header>
 
     <!-- Main site content -->
     <main>
 
         <!-- Content columns -->
-        <div id="column01"><h2>Studio Albums</h2><a href="#bottom">bottom</a>
+        <div id="sidebar"><h2>Studio Albums</h2>
             <img src="../images/bears/red_bear.png" alt="Red GD dancing bear" width="300px" height="300px">
         </div>
 
-        <div id="column02">
+        <div id="content">
             <!-- Table of the album data. -->
-            <table style="border: 1px solid black">
+            <table>
                 <tr>
                     <th>Year</th>
                     <th>Title</th>
@@ -152,7 +153,7 @@
                 </tr>
                 <tr>
                     <td>1989</td>
-                    <td>Dylan & the Dead</td>
+                    <td id="dyl_and_dead">Dylan & the Dead</td>
                     <td><img src="../images/album_covers/dylan_and_the_dead.jpg" alt="Dylan & the Dead" height="150px"
                              width="150px"></td>
                 </tr>
@@ -173,8 +174,8 @@
     </main>
 
     <!--Footer, appears at bottom of the page.  -->
-    <footer id="bottom">
-        <p><a href="mailto:nkammerer@albany.edu">Contact</a></p>
+    <footer>
+        <p id="email"><a href="mailto:nkammerer@albany.edu">Send me an email</a></p>
     </footer>
 </body>
 </html>

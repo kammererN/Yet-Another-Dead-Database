@@ -3,11 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <title>Yet Another (Grateful) Dead Database</title>
+
         <!-- LINK TO EXTERNAL STYLE SHEET. -->
         <link rel="stylesheet" href="home_styles.css">
         <!-- LINK TO MONTSERRAT FONT -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="/images/favicon2.ico">
+
     </head>
 <body>
     <!-- Header banner-->
@@ -17,28 +19,43 @@
         <nav>
             <ul>
                 <li><a href="index.html" title="About page">About</a></li>
+                <li><a href="pages/history.html" title="History of the Band">History</a></li>
                 <li><a href="pages/albums.html" title="Albums">Studio Albums</a></li>
                 <li><a href="pages/art.html" title="Fan Art">Fan Art</a></li>
-                <li><a href="pages/history.html" title="History of the Band">History of the Band</a></li>
+                <li><a href="#email" title="Intrapage link">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Main site content -->
     <main>
-        <p>Fuckers in the zoo telling me, always in the gorilla exhibit Harambe ain’t bout this, Harambe ain’t bout that
-            My boy a SB on fucking Cincinnati and them He, he they say that ape don’t be putting in no work SHUT THE FUCK
-            UP! Y'all animals ain’t know shit All y'all humans talk about Harambe ain’t no hitta Harambe ain’t this Harambe
-            a fake SHUT THE FUCK UP Y'all don’t live with that ape Y'all know that ape got caught dropping with a 3 year
-            old running from the zookeeper and shit ape been in shot down since fuckin, I don’t know when! Motherfuckers
-            stop fuckin' playin' him like that Them zookeepers and animals savages out there If I catch another human
-            talking sweet about Harambe I’m fucking beating they ass! I’m not fucking playing no more You know those
-            apes role with Florida'Gator, Cecil the Lion and them.</p>
 
+        <!-- Content columns -->
+        <div id="sidebar"><h2>About</h2>
+            <img src="images/bears/maroon_bear.jpg" alt="Maroon GD dancing bear" width="300px" height="300px">
+        </div>
+
+        <div id="content">
+            <!-- Welcome text -->
+            <h2>Welcome!</h2>
+            <p>The Grateful Dead was an American rock band formed in 1965 in Palo Alto, California. The band is
+                known for its eclectic style, which fused elements of rock, folk, country, jazz, bluegrass,
+                blues, rock and roll, gospel, reggae, world music, and psychedelia; for live performances of
+                lengthy instrumental jams that typically incorporated modal and tonal improvisation; and for its
+                devoted fan base, known as "Deadheads". "Their music", writes Lenny Kaye, "touches on ground
+                that most other groups don't even know exists." These various influences were distilled into a
+                diverse and psychedelic whole that made the Grateful Dead "the pioneering Godfathers of the jam
+                band world".</p>
+
+            <!-- iFrame content -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gV_WiRsF3tM" title="YouTube video player"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+                        picture-in-picture" allowfullscreen></iframe>
+        </div>
     </main>
     <!--Footer, appears at bottom of the page.  -->
     <footer>
-        <p><a href="mailto:nkammerer@albany.edu">Contact</a></p>
+        <p id="email"><a href="mailto:nkammerer@albany.edu">Send me an email!</a></p>
     </footer>
 </body>
 </html>
