@@ -8,4 +8,4 @@ YADD is a project made by [Nick Kammerer](mailto:nkammerer@albany.edu) which see
 
 - Relational database containing song and album information for the Grateful Dead's studio albums.
 - Web application capable of searching the database and returning query results.
-- Information pages containing information about The Grateful Dead. 
+- Information pages about The Grateful Dead including a general overview, an extended history of the band. studio albums, and fan art. 
