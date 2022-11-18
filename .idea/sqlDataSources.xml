@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="50b2a760-a33a-45b4-9167-e0ef3cd30188" name="yadd Mapping">
+      <data-sources db="d2614b77-4a12-4e77-814e-d6162e2eaa81" ddl="132b47a3-1476-4022-a785-f43ece43bbac" />
+      <scope>
+        <node kind="schema" qname="main" />
+      </scope>
+    </mapping>
+  </component>
+  <component name="SqlDataSourceStorage">
+    <option name="dataSources">
+      <list>
+        <State>
+          <option name="id" value="132b47a3-1476-4022-a785-f43ece43bbac" />
+          <option name="name" value="yadd (DDL)" />
+          <option name="languageId" value="SQLite" />
+          <option name="urls">
+            <array />
+          </option>
+        </State>
+      </list>
+    </option>
+  </component>
+</project>

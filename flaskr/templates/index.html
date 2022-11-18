@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Yet Another (Grateful) Dead Database</title>
+        <!-- LINK TO EXTERNAL STYLE SHEET. -->
+        <link rel="stylesheet" href="{{ url_for("static",filename="css/style.css") }}">
+        <!-- LINK TO MONTSERRAT FONT -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="{{ url_for("static",filename="img/favicon2.ico") }}">
+    </head>
+<body>
+    <!-- Header banner-->
+    <header>
+        <img src="{{ url_for("static",filename="img/stealie.jpg") }}" alt="Stealie logo">
+        <h1>YADD: Yet Another Dead Database</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for("index")  }}" title="About page">About</a></li>
+                <li><a href="{{ url_for("history")  }}" title="History of the Band">History</a></li>
+                <li><a href="{{ url_for("albums")  }}" title="Albums">Studio Albums</a></li>
+                <li><a href="{{ url_for("art")  }}" title="Fan Art">Fan Art</a></li>
+                <li><a href="{{ url_for("yadd")  }}" title="Database Search">Search the DB!</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main site content -->
+    <main>
+
+        <!-- Content columns -->
+        <div id="sidebar"><h2>About</h2>
+            <img src="{{ url_for("static",filename="img/bears/maroon_bear.jpg") }}" alt="Maroon GD dancing bear" width="300px" height="300px">
+        </div>
+
+        <div id="content">
+            <!-- Welcome text -->
+            <h2>Welcome!</h2>
+            <p>The Grateful Dead was an American rock band formed in 1965 in Palo Alto, California. The band is
+                known for its eclectic style, which fused elements of rock, folk, country, jazz, bluegrass,
+                blues, rock and roll, gospel, reggae, world music, and psychedelia; for live performances of
+                lengthy instrumental jams that typically incorporated modal and tonal improvisation; and for its
+                devoted fan base, known as "Deadheads". "Their music", writes Lenny Kaye, "touches on ground
+                that most other groups don't even know exists." These various influences were distilled into a
+                diverse and psychedelic whole that made the Grateful Dead "the pioneering Godfathers of the jam
+                band world".</p>
+
+            <!-- iFrame content -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gV_WiRsF3tM" title="YouTube video player"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+                        picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </main>
+    <!--Footer, appears at bottom of the page.  -->
+    <footer>
+        <p id="email"><a href="mailto:nkammerer@albany.edu">Send me an email!</a></p>
+    </footer>
+</body>
+</html>

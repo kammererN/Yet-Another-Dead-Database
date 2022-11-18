@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>YADD | Fan Art</title>
+        <!-- LINK TO EXTERNAL STYLE SHEET. -->
+        <link rel="stylesheet" href="{{ url_for("static",filename="css/style.css") }}">
+        <!-- LINK TO MONTSERRAT FONT -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="{{ url_for("static",filename="img/favicon2.ico") }}">
+    </head>
+<body>
+    <!-- Header banner-->
+    <header>
+        <img src="{{ url_for("static",filename="img/stealie.jpg") }}" alt="Stealie logo">
+        <h1>YADD: Yet Another Dead Database</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for("index")  }}" title="About page">About</a></li>
+                <li><a href="{{ url_for("history")  }}" title="History of the Band">History</a></li>
+                <li><a href="{{ url_for("albums")  }}" title="Albums">Studio Albums</a></li>
+                <li><a href="{{ url_for("art")  }}" title="Fan Art">Fan Art</a></li>
+                <li><a href="{{ url_for("yadd")  }}" title="Database Search">Search the DB!</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main site content -->
+    <main>
+
+        <!-- Content columns -->
+        <div id="sidebar"><h2>Fan Art</h2>
+            <img src="{{ url_for("static",filename="img/bears/blue_bear.jpg") }}" alt="Blue GD dancing bear"
+                 width="300px" height="300px">
+        </div>
+
+        <div id="content">
+            <!-- Descriptive list -->
+            <dl>
+                <dt><img src="{{ url_for("static",filename="img/fan_art/easter_egg.jpg") }}"
+                         alt="Easter egg fan artwork" width="50%" height="50%"></dt>
+                <dd>This image encapsulates the eclectic stereotype that surrounds "Deadhead" culture.</dd><br><br>
+                <dt><img src="{{ url_for("static",filename="img/fan_art/deadheads_japan.jpg") }}"
+                         alt="Deadheads Japan poster" width="50%" height="50%"></dt>
+                <dd>The band had an international audience, with dedicated fans as far away as Japan!</dd><br><br>
+            </dl>
+        </div>
+    </main>
+
+    <!--Footer, appears at bottom of the page.  -->
+    <footer>
+        <p id="email"><a href="mailto:nkammerer@albany.edu">Send me an email</a></p>
+    </footer>
+</body>
+</html>
