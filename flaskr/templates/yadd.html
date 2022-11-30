@@ -2,9 +2,10 @@
 <html lang="en" >
     <head>
         <meta charset="UTF-8">
-        <title>YADD | Database Search</title>
+        <title>YADD | Database View</title>
         <!-- LINK TO EXTERNAL STYLE SHEET. -->
         <link rel="stylesheet" href="{{ url_for("static",filename="css/style.css") }}">
+        <link rel="stylesheet" href="{{ url_for("static",filename="css/yadd_tables.css") }}">
         <!-- LINK TO MONTSERRAT FONT -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
         <!-- Favicon -->
@@ -21,22 +22,65 @@
                 <li><a href="{{ url_for("history")  }}" title="History of the Band">History</a></li>
                 <li><a href="{{ url_for("albums")  }}" title="Albums">Studio Albums</a></li>
                 <li><a href="{{ url_for("art")  }}" title="Fan Art">Fan Art</a></li>
-                <li><a href="{{ url_for("yadd")  }}" title="Database Search">Search the DB!</a></li>
+                <li><a href="{{ url_for("yadd")  }}" title="Database View">View the DB!</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Main site content -->
     <main>
-
-        <!-- Content columns -->
-        <div id="sidebar"><h2>Search the database!</h2>
-            <img src="{{ url_for("static", filename="img/bears/maroon_bear.jpg") }}" alt="Maroon GD dancing bear" width="300px" height="300px">
-        </div>
-
-        <div id="content">
-            <h2>    </h2>
-
+        <div id="content" style="text-align: center">
+            <h2>View the DD!</h2>
+                <h3>Albums</h3>
+                <table id="album_table">
+                <tr>
+                    <td>No.</td>
+                    <td>Name</td>
+                    <td>Type</td>
+                    <td>No. of tracks</td>
+                    <td>Genre</td>
+                    <td>Year of release</td>
+                    <td>Duration</td>
+                </tr>
+                  {% for a in albums %}
+                      <tr>
+                          <td>{{ a[0] }}</td>
+                          <td>{{ a[1] }}</td>
+                          <td>{{ a[2] }}</td>
+                          <td>{{ a[3] }}</td>
+                          <td>{{ a[4] }}</td>
+                          <td>{{ a[5] }}</td>
+                          <td>{{ a[6] }}</td>
+                      </tr>
+                  {% endfor %}
+                </table>
+                <h3>Songs</h3>
+                <table id="song_table">
+                    <tr>
+                        <td>No.</td>
+                        <td>Name</td>
+                        <td>Album</td>
+                        <td>Genre</td>
+                        <td>Writer</td>
+                        <td>Lead singer</td>
+                        <td>Year of release</td>
+                        <td>Duration</td>
+                        <td>Keyboardist</td>
+                    </tr>
+                    {% for s in songs %}
+                        <tr>
+                            <td>{{ s[0] }}</td>
+                            <td>{{ s[1] }}</td>
+                            <td>{{ s[2] }}</td>
+                            <td>{{ s[3] }}</td>
+                            <td>{{ s[4] }}</td>
+                            <td>{{ s[5] }}</td>
+                            <td>{{ s[6] }}</td>
+                            <td>{{ s[7] }}</td>
+                            <td>{{ s[8] }}</td>
+                        </tr>
+                    {% endfor %}
+                </table>
         </div>
     </main>
     <!--Footer, appears at bottom of the page.  -->
