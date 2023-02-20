@@ -3,7 +3,6 @@
 # YADD: Yet Another (Grateful) Dead Database
 YADD is a project made by [Nick Kammerer](mailto:nkammerer@albany.edu) which seeks to make  Grateful Dead information
 more accessible for the Deadhead community.
-- Hosted at [UAlbany.](https://albany.edu/~nk677984/INF201/YADD)
 
 ### Features
 
