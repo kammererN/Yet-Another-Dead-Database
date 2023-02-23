@@ -5,8 +5,7 @@ YADD is a project made by [Nick Kammerer](mailto:nkammerer@albany.edu) which see
 more accessible for the Deadhead community.
 
 ### Features
-
-- Relational database containing song and album information for the Grateful Dead's studio albums.
-- Web application capable of searching the database and returning query results.
-- Information pages about The Grateful Dead including a general overview, an extended history of the band. studio 
+- SQLite3 database containing song and album information for the Grateful Dead's studio album releases.
+-[Flask](https://flask.palletsprojects.com/en/2.2.x/#) web application capable of reading the database.
+- Additional Information pages about The Grateful Dead including a general overview, an extended history of the band. studio 
 albums, and fan art. 
