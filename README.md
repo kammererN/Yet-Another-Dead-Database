@@ -6,6 +6,6 @@ more accessible for the Deadhead community.
 
 ### Features
 - SQLite3 database containing song and album information for the Grateful Dead's studio album releases.
--[Flask](https://flask.palletsprojects.com/en/2.2.x/#) web application capable of reading the database.
+- [Flask](https://flask.palletsprojects.com/en/2.2.x/#) web application capable of reading the database.
 - Additional Information pages about The Grateful Dead including a general overview, an extended history of the band. studio 
 albums, and fan art. 
